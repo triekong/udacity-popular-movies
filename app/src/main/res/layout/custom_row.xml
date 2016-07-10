@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_custom_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_state_drawable">
+
+    <View
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"/>
+
+    <ImageView
+        android:id="@+id/im_movie_poster_icon"
+        android:layout_width="54dp"
+        android:layout_height="79dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/movie_poster_image"
+        android:src="@drawable/ic_central_poster"/>
+
+    <TextView
+        android:id="@+id/tv_movie_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:text="Central Intelligence"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_movie_title"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:text="(2016)"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
