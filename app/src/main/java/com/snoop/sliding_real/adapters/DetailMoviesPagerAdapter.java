@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.snoop.sliding_real.fragments.FragmentA;
+import com.snoop.sliding_real.fragments.OverviewFragment;
 
 import static com.snoop.sliding_real.extras.Constants.MAX_NUM_PAGES;
 import static com.snoop.sliding_real.extras.Constants.MOVIES_CAST;
@@ -28,7 +29,7 @@ public class DetailMoviesPagerAdapter extends FragmentStatePagerAdapter{
             case MOVIES_CAST:
                 return new FragmentA();
             case MOVIES_OVERVIEW:
-                return new FragmentA();
+                return new OverviewFragment();
             default:
                 return null;
         }
